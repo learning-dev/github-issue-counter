@@ -1,0 +1,17 @@
+
+{%block content%}
+<div>
+  <form method="POST" action="">
+    {{form.hidden_tag()}}
+    <fieldset class="form-group">
+      <dir class="form">
+        {{form.github_url.label}}
+        {{form.github_url}}
+      </dir>
+    </fieldset>
+    <div class="form-group">
+      {{form.submit}}
+    </div>
+  </form>
+</div>
+{%endblock content%}

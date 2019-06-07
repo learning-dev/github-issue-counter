@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {%if output_dict%}
+        <title>Github Repo - Number of Issues</title>
+    {%else%}
+        <title>Github Repo- Not Found</title>
+    {%endif%}
+
+</head>
+<body>
+    <table border="1">
+  <tr>
+    <th>Timeline</th>
+    <th>Number of Issues</th> 
+  </tr>
+  <tr>
+    <td>Issues Opened Today</td>
+    <td>{{output_dict['day']}}</td> 
+  </tr>
+  <tr>
+    <td>Issues Opened less than week Ago</td>
+    <td>{{output_dict['week']}}</td> 
+  </tr>
+  <tr>
+    <td>Issues Opened More than a week</td>
+    <td>{{output_dict['more_week']}}</td> 
+  </tr>
+  <tr>
+    <td>Total Issues Opened</td>
+    <td>{{output_dict['total']}}</td> 
+  </tr>
+  <tr>
+</table>
+</body>
+</html>
