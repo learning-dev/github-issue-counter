@@ -1,1 +1,1 @@
-# github_issue_counter
+# github-issue-counter
