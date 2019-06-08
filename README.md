@@ -6,7 +6,7 @@ Web application takes an URL to github "issues" of the repo and gives out the
 - **Number of Issues Opened within a Week**
 - **Number of Issues Opened more than a week**
 
-**Example Input URL** - https://github.com/facebook/react/**issues**
+**Example Input URL** - https://github.com/facebook/react/issues
 
 This is application is built in Python using **Flask** and deployed on linode using a Ubuntu server running nginx and gunicorn. 
 
