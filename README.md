@@ -8,6 +8,8 @@ Web application takes an URL to github "issues" of the repo and gives out the
 
 **Example Input URL** - https://github.com/facebook/react/issues
 
+**Deployed App ** - http://139.162.62.78
+
 This is application is built in Python using **Flask** and deployed on linode using a Ubuntu server running nginx and gunicorn. 
 
 
