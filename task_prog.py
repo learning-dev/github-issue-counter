@@ -86,12 +86,20 @@ app.config['SECRET_KEY']= '5b737afd51a9fef449c3ca09fbd79857'
 @app.route("/", methods=['GET', 'POST'])
 def input():
     form = InputForm()
+    if form.validate_on_submit():
+        response = requests.get(form.github_url.data)
+        print(form.github_url.data)
+        if response.status_code == 200:
+            global soup
+            soup = BeautifulSoup(response.text, 'html.parser')
+            output_dict = total_issues()
+            return render_template('output.html', output_dict=output_dict)
     return render_template('input.html', title='Input', form=form)
 
 
-@app.route("/output")
-def get_issues():
-    text = request.form['github_url']
+
+@app.route("/output", methods=['GET', 'POST'])
+def get_issues(text):
     response = requests.get(text)
     if response.status_code != 200:
         print("Please enter Valid URL or check your connnection")
