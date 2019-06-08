@@ -7,3 +7,7 @@ git clone https://github.com/learning-dev/github-issue-counter
 `pip install flask` 
 
 `pip install wtf-forms`
+
+`cd github-issue-counter`
+
+`python task_prog.py`
