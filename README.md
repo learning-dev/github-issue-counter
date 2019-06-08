@@ -5,9 +5,7 @@ Web application takes an URL to github "issues" of the repo and gives out the
 - **Number of Issues Opened Today**
 - **Number of Issues Opened within a Week**
 - **Number of Issues Opened more than a week**
-
-
-### URL format 
+ 
 **Example Input URL** - https://github.com/facebook/react/issues
 
 **Deployed App** - http://139.162.62.78
