@@ -5,11 +5,5 @@ Web Application that gives you list of issues that are opened a day ago, week ag
 ## To get started 
 git clone https://github.com/learning-dev/github-issue-counter
 
-## install the following
-`pip install flask` 
-
-`pip install wtf-forms`
-
-`cd github-issue-counter`
-
-`python task_prog.py`
+## install the requirements 
+`pip install -r requirements.txt`
